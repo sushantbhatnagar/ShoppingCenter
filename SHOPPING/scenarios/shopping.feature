@@ -1,5 +1,5 @@
-Feature: Shopping
+Feature: Shopping @ Centric
 
-  @dashboard
+  @register
   Scenario:  Dashboard Page
     Given I am on the Registerconfirmation Page

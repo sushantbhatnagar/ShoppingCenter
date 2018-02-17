@@ -1,11 +1,10 @@
-
-
 ENV['OZ_APP_NAME'] = 'SHOPPING'
 ENV['OZ_CONFIG_DIR'] = "#{File.dirname(__FILE__)}/config"
 
 require_relative '../CORE/setup.rb'
 
 require_relative '../SHOPPING/pages/shopping_root_page.rb'
+require_relative '../SHOPPING/overrides/elements/select_list.rb'
 recursively_require_all_base_pages('../SHOPPING/pages')
 recursively_require_all_edge_pages('../SHOPPING/pages')
 

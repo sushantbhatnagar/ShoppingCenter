@@ -1,9 +1,6 @@
-# Register Page
+# Register Confirmation  Page
 class RegisterconfirmationPage < ShoppingRootPage
-  add_id_element(:div, /Confirmation/, class: 'page-title')
+  add_id_element(:div, /Your registration completed/, class: 'result')
 
-  def create_elements
-
-  end
-
+  def create_elements; end
 end

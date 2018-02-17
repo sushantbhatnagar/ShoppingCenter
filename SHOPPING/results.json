@@ -1,14 +1,14 @@
 [
   {
     "uri": "../SHOPPING/scenarios/shopping.feature",
-    "id": "shopping",
+    "id": "shopping-@-centric",
     "keyword": "Feature",
-    "name": "Shopping",
+    "name": "Shopping @ Centric",
     "description": "",
     "line": 1,
     "elements": [
       {
-        "id": "shopping;dashboard-page",
+        "id": "shopping-@-centric;dashboard-page",
         "keyword": "Scenario",
         "name": "Dashboard Page",
         "description": "",
@@ -16,18 +16,18 @@
         "type": "scenario",
         "tags": [
           {
-            "name": "@dashboard",
+            "name": "@register",
             "line": 3
           }
         ],
         "before": [
           {
             "match": {
-              "location": "C:/Learnings/Oz/oz/CORE/step_definitions/hooks.rb:4"
+              "location": "C:/Learnings/CentricShopStore/CORE/step_definitions/hooks.rb:4"
             },
             "result": {
               "status": "passed",
-              "duration": 4464822
+              "duration": 7398972
             }
           },
           {
@@ -36,7 +36,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6254079694
+              "duration": 4420488033
             }
           }
         ],
@@ -46,23 +46,22 @@
             "name": "I am on the Registerconfirmation Page",
             "line": 5,
             "match": {
-              "location": "C:/Learnings/Oz/oz/CORE/step_definitions/page_steps.rb:7"
+              "location": "C:/Learnings/CentricShopStore/CORE/step_definitions/page_steps.rb:7"
             },
             "result": {
-              "status": "failed",
-              "error_message": "timed out after 30 seconds, waiting for #<Watir::Select: located: false; {:id=>\"DateOfBirthDay\", :tag_name=>\"select\"}> to be located (Watir::Exception::UnknownObjectException)\nC:/Learnings/Oz/oz/CORE/elements/select_list.rb:14:in `fill'\nC:/Learnings/Oz/oz/CORE/pages/core_page.rb:31:in `block in fill'\nC:/Learnings/Oz/oz/CORE/pages/core_page.rb:29:in `each_key'\nC:/Learnings/Oz/oz/CORE/pages/core_page.rb:29:in `fill'\nC:/Learnings/Oz/oz/CORE/world_gadgets/router/core_page_navigation.rb:31:in `block in navigate_via_route'\nC:/Learnings/Oz/oz/CORE/world_gadgets/router/core_page_navigation.rb:31:in `each'\nC:/Learnings/Oz/oz/CORE/world_gadgets/router/core_page_navigation.rb:31:in `navigate_via_route'\nC:/Learnings/Oz/oz/CORE/world_extensions/world_navigation.rb:11:in `block in proceed_to'\nC:/Learnings/Oz/oz/CORE/world_extensions/world_navigation.rb:10:in `each'\nC:/Learnings/Oz/oz/CORE/world_extensions/world_navigation.rb:10:in `proceed_to'\nC:/Learnings/Oz/oz/CORE/step_definitions/page_steps.rb:10:in `/^I am on the (.*?) Page(?: by way of the (.*?) Page)?$/'\n../SHOPPING/scenarios/shopping.feature:5:in `Given I am on the Registerconfirmation Page'",
-              "duration": 41464346036
+              "status": "passed",
+              "duration": 33470542576
             }
           }
         ],
         "after": [
           {
             "match": {
-              "location": "C:/Learnings/Oz/oz/CORE/step_definitions/hooks.rb:19"
+              "location": "C:/Learnings/CentricShopStore/CORE/step_definitions/hooks.rb:19"
             },
             "result": {
               "status": "passed",
-              "duration": 705172392
+              "duration": 1333406222
             }
           }
         ]
