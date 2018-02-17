@@ -1,0 +1,72 @@
+[
+  {
+    "uri": "../SHOPPING/scenarios/shopping.feature",
+    "id": "shopping",
+    "keyword": "Feature",
+    "name": "Shopping",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "shopping;dashboard-page",
+        "keyword": "Scenario",
+        "name": "Dashboard Page",
+        "description": "",
+        "line": 4,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@dashboard",
+            "line": 3
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "C:/Learnings/Oz/oz/CORE/step_definitions/hooks.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4464822
+            }
+          },
+          {
+            "match": {
+              "location": "step_definitions/hooks.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6254079694
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the Registerconfirmation Page",
+            "line": 5,
+            "match": {
+              "location": "C:/Learnings/Oz/oz/CORE/step_definitions/page_steps.rb:7"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "timed out after 30 seconds, waiting for #<Watir::Select: located: false; {:id=>\"DateOfBirthDay\", :tag_name=>\"select\"}> to be located (Watir::Exception::UnknownObjectException)\nC:/Learnings/Oz/oz/CORE/elements/select_list.rb:14:in `fill'\nC:/Learnings/Oz/oz/CORE/pages/core_page.rb:31:in `block in fill'\nC:/Learnings/Oz/oz/CORE/pages/core_page.rb:29:in `each_key'\nC:/Learnings/Oz/oz/CORE/pages/core_page.rb:29:in `fill'\nC:/Learnings/Oz/oz/CORE/world_gadgets/router/core_page_navigation.rb:31:in `block in navigate_via_route'\nC:/Learnings/Oz/oz/CORE/world_gadgets/router/core_page_navigation.rb:31:in `each'\nC:/Learnings/Oz/oz/CORE/world_gadgets/router/core_page_navigation.rb:31:in `navigate_via_route'\nC:/Learnings/Oz/oz/CORE/world_extensions/world_navigation.rb:11:in `block in proceed_to'\nC:/Learnings/Oz/oz/CORE/world_extensions/world_navigation.rb:10:in `each'\nC:/Learnings/Oz/oz/CORE/world_extensions/world_navigation.rb:10:in `proceed_to'\nC:/Learnings/Oz/oz/CORE/step_definitions/page_steps.rb:10:in `/^I am on the (.*?) Page(?: by way of the (.*?) Page)?$/'\n../SHOPPING/scenarios/shopping.feature:5:in `Given I am on the Registerconfirmation Page'",
+              "duration": 41464346036
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "C:/Learnings/Oz/oz/CORE/step_definitions/hooks.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 705172392
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

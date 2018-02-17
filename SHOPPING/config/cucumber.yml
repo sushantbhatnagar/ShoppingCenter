@@ -1,0 +1,21 @@
+
+##### cucumber.yml ################################################################################
+###################################################################################################
+##
+##  This file defines profiles that cucumber uses to determine what tests to run during execution.
+##  There are a few mechanics at work here:
+##    */*/scenarios    : where to find the .feature files containing our tests
+##    --require [file] : ruby code file(s) to load for running tests
+##    --tags [tags]    : tags in the gherkin to look for when running tests
+##    -p [profile]     : inherit values from another profile
+##
+##
+
+
+
+# The default profile only defines some output that we want to have for ALL of our tests
+default: --format pretty --format html --out results.html --format json --out results.json
+
+#TODO: The cucumber.yml file cannot live in the CORE indefinitely. There are ways around this, but it requires some code
+  # changes in other parts of the framework first.
+example: ../SHOPPING/scenarios --require ../SHOPPING/setup.rb -p default
