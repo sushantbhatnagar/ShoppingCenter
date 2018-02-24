@@ -2,9 +2,11 @@ pipeline{
 	agent any
 
 	stages{
-		stage('Build') {
+		stage('Running Ruby script') {
 			steps {
-				echo 'Building...'
+				echo 'Ruby Cucumber'
+				sh 'ruby --version'
+				sh 'bundle install'
 			}
 		}
 		stage('Test') {
