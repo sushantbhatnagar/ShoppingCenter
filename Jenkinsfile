@@ -5,8 +5,8 @@ pipeline{
 		stage('Running Ruby script') {
 			steps {
 				echo 'Ruby Cucumber'
-				sh 'ruby --version'
-				sh 'bundle install'
+				bat 'ruby --version'
+				bat 'bundle install'
 			}
 		}
 		stage('Test') {
