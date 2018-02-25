@@ -1,5 +1,5 @@
 pipeline{
-	agent any
+	agent { docker: 'ruby 2.3.3' }
 
 	stages{
 		stage('Running Ruby script') {
