@@ -5,7 +5,7 @@ INPUT_DATA:
     :dob_day_select_list: '10'
     :dob_month_select_list: 'May'
     :dob_year_select_list: '1991'
-    :email_text_field: 'saiseva@shirdi.com'
+    :email_text_field: 'saiseva2@shirdi.com'
     :password_text_field: 'sairam'
     :confirm_password_text_field: 'sairam'
     :company_name_text_field: 'Centric Consulting'

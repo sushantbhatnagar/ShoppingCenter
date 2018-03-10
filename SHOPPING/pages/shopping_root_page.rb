@@ -1,5 +1,3 @@
-
-
 class ShoppingRootPage < CorePage
 
   def begin_new_session

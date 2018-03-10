@@ -1,7 +1,7 @@
 # Registeration Page
 class RegisterPage < ShoppingRootPage
   add_id_element(:div, /Register/, class: 'page-title')
-  add_route(:RegisterconfirmationPage, :register_confirmation_button, :fill)
+  add_route(:RegisterConfirmationPage, :register_confirmation_button, :fill)
 
   def create_elements
     # Radio Button yet to work !

@@ -3,11 +3,13 @@ require 'cucumber'
 require 'cucumber/rake/task'
 
 # Run register scenario using rake task
+# Run 'rake register'
 Cucumber::Rake::Task.new(:register) do |t|
   t.profile = 'rake_shopping'
 end
 
-# Dry run task
+# Dry-run task
+# Run 'rake cucumber_dry_run:dry_run'
 namespace 'cucumber_dry_run' do
   desc 'Run a Cucumber dry run to validate Gherkin and Encoding'
   Cucumber::Rake::Task.new(:dry_run) do |t|

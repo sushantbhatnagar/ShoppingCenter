@@ -1,0 +1,4 @@
+INPUT_DATA:
+  DEFAULT:
+    :email_login_text_field:
+    :password_login_text_field:
