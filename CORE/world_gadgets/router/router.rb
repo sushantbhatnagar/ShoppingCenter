@@ -13,7 +13,7 @@ class Router
     timeout = 60 if @world.configuration["BROWSER"] == "internet_explorer"
 
     start_time = Time.now()
-    # CoreUtils.wait_until(timeout) { @page_specs[target_page].done_waiting? }
+    CoreUtils.wait_until(timeout) { @page_specs[target_page].done_waiting? }
     @world.logger.debug "Page loaded after [#{(Time.now - start_time).round(0)}] seconds"
   end
 
@@ -32,7 +32,7 @@ class Router
   def assert_application_is_on_page(page_class)
     @world.logger.validation "Ensuring that application is on page [#{page_class}]"
 
-    unless CoreUtils.wait_until(30){application_is_on_page?(page_class)}
+    unless CoreUtils.wait_until(3){application_is_on_page?(page_class)}
       @world.logger.debug "Application was not on the [#{page_class}], attempting to find current page"
       current_page = find_current_page
       raise "ERROR: The Application is on the wrong page!\n\tOZ expected that page to be [#{page_class}] but found [#{current_page}]!\n"

@@ -1,2 +1,10 @@
-*.idea
-*.log
+#Intellij configs
+.idea
+
+#Cucumber output files
+results.json
+*.html
+
+#Oz output files
+debug.log
+page_graph.dot

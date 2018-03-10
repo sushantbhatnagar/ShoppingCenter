@@ -48,7 +48,6 @@ module CoreUtils
 
   def self.wait_until(timeout, &block)
     begin
-      # require 'pry' ; binding.pry
       Watir::Wait.until(timeout: timeout, &block)
       return true
     rescue Watir::Wait::TimeoutError => e

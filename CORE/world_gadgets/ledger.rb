@@ -28,12 +28,16 @@ class Ledger
     end
 
     def record_fill(element_name, value)
+        @world.logger.warn "[ERROR RECORDING FILL] element_name expected to be a Symbol! Instead was given a [#{element_name.class}]!" unless element_name.is_a? Symbol
         page_name = @world.current_page.class
         @filled_data[page_name] = {} unless @filled_data[page_name]
         @filled_data[page_name][element_name] = value
     end
 
     def get_value(page_class, element_name)
+        @world.logger.warn "[ERROR GETTING VALUE] page_class expected to be a Class! Instead was given a [#{page_class.class}]!" unless page_class.is_a? Class
+        @world.logger.warn "[ERROR GETTING VALUE] element_name expected to be a Symbol! Instead was given a [#{element_name.class}]!" unless element_name.is_a? Symbol
+        return nil unless @filled_data[page_class]
         @filled_data[page_class][element_name]
     end
 
@@ -55,7 +59,7 @@ class Ledger
         print "===   LEDGER VALUES   ===\n"
         print "==========================\n"
 
-        print "\n == VISITED_PAGES ==\n"
+        print "\n  === VISITED_PAGES ===\n"
         @pages_visited.each do |item|
             print "    #{item[0]} @ #{item[1].asctime}\n"
         end
@@ -69,7 +73,7 @@ class Ledger
         end
 
         @objects.each_pair do |key, value|
-            print "\n  == #{key.to_s.upcase} ==\n"
+            print "\n  === #{key.to_s.upcase} ===\n"
             truncate = @world.configuration['LEDGER_TRUNCATION']
             if value.class == Hash
                 CoreUtils.recursively_print_hash(value, truncate, indent='    ')
