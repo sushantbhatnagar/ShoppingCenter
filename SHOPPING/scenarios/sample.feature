@@ -1,4 +1,3 @@
-
 Feature: Test feature for the OZ framework
 
   Scenario: Static text on the Home Page
