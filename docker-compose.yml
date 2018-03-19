@@ -15,3 +15,8 @@ services:
     image: postgres:9.6
     environment:
       POSTGRES_PASSWORD: example
+     volumes:
+      - test_results:/var/lib/postgresql/data
+
+volumes:
+  test_results:
