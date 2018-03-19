@@ -8,3 +8,7 @@ results.json
 #Oz output files
 debug.log
 page_graph.dot
+results.html
+results.json
+.gitignore
+
