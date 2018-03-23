@@ -1,3 +1,5 @@
-digraph G {RegisterPage -> RegisterconfirmationPage[color="green", label="register_confirmation_button"];
+digraph G {LoginPage -> ShoppingPage[color="green", label="log_in_button"];
+RegisterPage -> RegisterConfirmationPage[color="green", label="register_confirmation_button"];
 ShoppingPage -> RegisterPage[color="green", label="register_button"];
+ShoppingPage -> LoginPage[color="green", label="login_button"];
 }

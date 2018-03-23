@@ -1,0 +1,7 @@
+adapter: postgressql
+host: localhost
+database: test_results
+username: postgres
+password: example
+pool: 5
+timeout: 5000

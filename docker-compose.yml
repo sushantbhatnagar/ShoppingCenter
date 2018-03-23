@@ -4,19 +4,26 @@ version: '3.3'
 # uses sample site from https://startbootstrap.com/template-overviews/agency/
 
 services:
-  centric_store:
+  centric_shop:
     build:
       context: .
       dockerfile: store.Dockerfile
-    image: centric-store
+    volumes:
+      - .:/usr/src/app
     cap_add:
       - ALL
+    depends_on:
+      - psql-db
+    tty: true
   psql-db:
     image: postgres:9.6
     environment:
       POSTGRES_PASSWORD: example
-     volumes:
+    ports:
+      - "8001:5432"
+    volumes:
       - test_results:/var/lib/postgresql/data
+    tty: true
 
 volumes:
   test_results:
