@@ -3,3 +3,6 @@ source 'https://rubygems.org'
 gem 'activerecord', '5.1.4'
 gem 'activemodel', '5.1.4'
 gem 'pg','1.0.0'
+
+# gem 'postgres-pr', '~> 0.7.0'
+# gem 'activerecord-postgresql-adapter', '~> 0.0.1'

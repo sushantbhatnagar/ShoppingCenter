@@ -10,6 +10,7 @@ require_relative '../SHOPPING/overrides/world_gadgets/ledger.rb'
 require_relative '../SHOPPING/database_connection/Gemfile'
 require_relative '../SHOPPING/database_connection/script.rb'
 require_relative '../SHOPPING/database_connection/suite_data.rb'
+require_relative '../SHOPPING/config/database.yml'
 # require_relative '../SHOPPING/database_connection/database.yml'
 
 recursively_require_all_base_pages('../SHOPPING/pages')
