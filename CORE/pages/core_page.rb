@@ -36,13 +36,19 @@ class CorePage
         @elements[element_name].click
     end
 
+    def hover_over(element_name)
+      @elements[element_name].hover
+    end
+
     def validate_content
         data = expected_data()
         raise ArgumentError, "ERROR: Method: [expected_data] of class [#{self.class}] should return a Hash\n" unless data.class == Hash
 
+        @world.validation_engine.enter_validation_mode
         @elements.values.each do |element|
             element.validate(data[element.name])
         end
+        @world.validation_engine.exit_validation_mode
     end
 
 
