@@ -3,9 +3,11 @@ class RegisterPage < ShoppingRootPage
   add_id_element(:div, /Register/, class: 'page-title')
   add_route(:RegisterConfirmationPage, :register_confirmation_button, :fill)
 
+  #TODO: Use faker gem to get this data randomly
+
   def create_elements
-    # Radio Button yet to work !
-    #TODO: Use faker gem to get this data randomly
+    add_radio_button(:mr, element_type: :input, id: 'gender-male')
+    add_radio_button(:mrs, element_type: :input, id: 'gender-female')
     add_text_field(:first_name, element_type: :input, id:'FirstName')
     add_text_field(:last_name, element_type: :input, id:'LastName')
     add_select_list(:dob_day, name:'DateOfBirthDay')

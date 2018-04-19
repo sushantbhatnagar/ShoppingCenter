@@ -2,7 +2,7 @@ Feature: Shopping @ Centric
 
   @register
   Scenario:  Dashboard Page
-    Given I am on the RegisterConfirmation Page
+    Given I am on the Register Confirmation Page
 
   @login
   Scenario: Login

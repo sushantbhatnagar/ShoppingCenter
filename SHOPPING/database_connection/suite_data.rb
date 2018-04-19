@@ -1,2 +1,2 @@
-class SuiteData < ActiveRecord::Base
-end
+# class SuiteData < ActiveRecord::Base
+# end

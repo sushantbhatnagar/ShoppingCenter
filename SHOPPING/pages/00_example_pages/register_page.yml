@@ -1,5 +1,6 @@
 INPUT_DATA:
   DEFAULT:
+    :mr_radio_button: 'selected'
     :first_name_text_field: 'Sushant'
     :last_name_text_field: 'Bhatnagar'
     :dob_day_select_list: '10'

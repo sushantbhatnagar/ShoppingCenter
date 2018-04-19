@@ -9,7 +9,7 @@ Before do |scenario|
   if scenario.source.last.class.to_s == 'Cucumber::Core::Ast::Scenario'
     @logger.header "Scenario: #{scenario.name}".cyan
     scenario.source.last.children.each do |step|
-      @logger.header "\t#{step.text}".cyan
+      @logger.header "\t#{step}".cyan
     end
 
   elsif scenario.source.last.class.to_s == 'Cucumber::Core::Ast::ExamplesTable::Row'
